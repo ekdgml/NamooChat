@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+        http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0">
+
+	<persistence-unit name="persistence-unit"
+		transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+
+		<!-- Entity 등록 -->
+		
+		<class>com.vizend.town.reign.nation.domain.Nation</class>
+		<class>com.vizend.town.reign.nation.domain.Metro</class>
+		<class>com.vizend.town.reign.nation.domain.Town</class>
+
+		<class>com.vizend.town.reign.people.domain.Castellan</class>
+		<class>com.vizend.town.reign.people.domain.Citizen</class>
+		<class>com.vizend.town.reign.people.domainbackup.CitizenBackup</class>
+		<class>com.vizend.town.reign.people.domain.PublicServant</class>
+		<class>com.vizend.town.reign.people.domain.CivicAdmin</class>
+		<class>com.vizend.town.reign.people.domain.Towner</class>
+		<class>com.vizend.town.reign.people.domain.StatusCode</class>
+		
+		<class>com.vizend.town.reign.enrollment.domain.Enrollment</class>
+		<class>com.vizend.town.reign.enrollment.domain.Guild</class>
+		
+		<class>com.vizend.town.idgen.sequence.domain.TownSequence</class>
+
+		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.use_sql_comments" value="false" />
+			<property name="hibernate.hbm2ddl.auto" value="create-drop" />
+
+			<property name="hibernate.max_fetch_depth" value="3" />
+			<property name="hibernate.jdbc.fetch_size" value="5" />
+			<property name="hibernate.jdbc.batch_size" value="50" />
+			<property name="hibernate.cache.region.factory_class"
+				value="net.sf.ehcache.hibernate.SingletonEhCacheRegionFactory" />
+			<property name="hibernate.cache.use_second_level_cache"
+				value="true" />
+			<property name="hibernate.cache.use_query_cache" value="true" />
+		</properties>
+	</persistence-unit>
+
+</persistence>

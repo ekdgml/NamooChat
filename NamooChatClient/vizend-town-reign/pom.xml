@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.vizend.dream</groupId>
+		<artifactId>vizend-dream-pom</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+
+	<groupId>com.vizend.town</groupId>
+	<artifactId>vizend-town-reign</artifactId>
+	<description>vizend-town-reign Component</description>
+
+	<scm>
+		<connection>scm:svn:http://scm.ace.dev/svn/ace_repo/trunk/vizend-town/vizend-town-reign</connection>
+	</scm>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.vizend.dream</groupId>
+			<artifactId>vizend-dream-test</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.vizend.dream</groupId>
+			<artifactId>vizend-dream-util</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+	
+		<dependency>
+			<groupId>com.vizend.dream</groupId>
+			<artifactId>vizend-dream-depot</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.vizend.town</groupId>
+			<artifactId>vizend-town-idgen</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.vizend.dream</groupId>
+			<artifactId>vizend-dream-test</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+</project>

@@ -1,0 +1,15 @@
+com.vizend.town.reign.nation.domain
+com.vizend.town.reign.nation.facade
+com.vizend.town.reign.nation.logic
+com.vizend.town.reign.nation.shared
+com.vizend.town.reign.people.domain
+com.vizend.town.reign.people.facade
+com.vizend.town.reign.people.logic
+com.vizend.town.reign.people.shared
+com.vizend.town.reign.ruling.facade
+com.vizend.town.reign.ruling.logic
+com.vizend.town.reign.servant.domain
+com.vizend.town.reign.servant.facade
+com.vizend.town.reign.servant.logic
+com.vizend.town.reign.servant.shared
+com.vizend.town.reign.shared
